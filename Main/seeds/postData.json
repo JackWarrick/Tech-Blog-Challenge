@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Can't stand JavaScript",
+    "description": "JavaScript is the worst. Why would anyone do this.",
+    "user_id": 1
+  },
+  {
+    "title": "SQL is the goat",
+    "description": "Everyone should know SQL and master it because it is superior.",
+    "user_id": 2
+  },
+  {
+    "title": "Who is the greatest coder?",
+    "description": "I believe Bill Gates is the greatest coder of all time. Any other ideas?",
+    "user_id": 3
+  }
+]
