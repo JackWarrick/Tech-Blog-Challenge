@@ -4,13 +4,13 @@
   <div class="col-md-5">
     <h2>
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      <a href="/posts/{{post.id}}">{{post.title}}</a>
+      <a href="/posts/{{post.id}}" class = "text-info">{{post.title}}</a>
     </h2>
     <p>
       <!-- Comment -->
       Comment could go here later
     </p>
-    <p>Created by {{post.user.username}} on {{format_date post.date_created}}</p>
+    <p class="text-muted" >Created by {{post.user.username}} on {{format_date post.date_created}}</p>
   </div>
   <div class="col-md-7">
     <p>
