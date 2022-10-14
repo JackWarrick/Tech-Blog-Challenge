@@ -43,4 +43,4 @@ For more information, please reference my GitHub profile [here](https://github.c
 
 **Screenshot of answered prompts:**
 
-![Screenshot of Program](Main/assets/Tech-Blog.png)
+![Screenshot of Program](assets/Tech-Blog.png)
