@@ -37,7 +37,7 @@ For more information, please reference my GitHub profile [here](https://github.c
 
 **Link to deployed application:**
 
-[Link to Deployed Application]()
+[Link to Deployed Application](https://tech-blog2496.herokuapp.com/)
 
 -----
 
