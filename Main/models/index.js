@@ -1,3 +1,5 @@
+//Worked with Harrison Cooper 
+
 const User = require('./User');
 const Post = require('./Post');
 

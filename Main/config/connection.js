@@ -1,3 +1,5 @@
+//Worked with Harrison Cooper 
+
 const Sequelize = require('sequelize');
 require('dotenv').config();
 

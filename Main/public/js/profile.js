@@ -1,6 +1,4 @@
-//Worked with Harrison Cooper on starting out code
-
-const { response } = require("express");
+//Worked with Harrison Cooper
 
 const newFormHandler = async (event) => {
   event.preventDefault();
