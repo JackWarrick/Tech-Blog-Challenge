@@ -10,6 +10,8 @@ class User extends Model {
   }
 }
 
+
+//A user has an ID, which is autoincremented and is the primary key, a username, and a password, which needs to be at lease 8 chars long
 User.init(
   {
     id: {
@@ -47,6 +49,7 @@ User.init(
     underscored: true,
     modelName: 'user',
   }
+  //this model is called 'user' as we export it
 );
 
 module.exports = User;

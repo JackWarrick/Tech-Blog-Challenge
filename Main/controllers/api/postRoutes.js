@@ -4,6 +4,8 @@ const router = require('express').Router();
 const { Post } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+//Route for a new post by the user
+
 router.post('/', withAuth, async (req, res) => {
   try {
     const newPost = await Post.create({
@@ -18,7 +20,9 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-router.get('/:id', withAuth, async (req, res) => {
+//Route to look at all posts by a particular user based on session.user_id
+
+router.get('/', withAuth, async (req, res) => {
 try {
 const postData = await Post.findByPk(req.session.user_id, {
   include: [{model: Post}]});
@@ -29,16 +33,7 @@ const postData = await Post.findByPk(req.session.user_id, {
 }
 });
 
-// const categoryData = await Category.findByPk(req.params.id, {
-//   include: [{model: Product}]});
-
-// if (!categoryData) {
-//   res.status(404).json({
-//     message: 'OH NO! No category found with this id' 
-//   });
-//   return;
-
-//get all posts where id = req.session.user_id
+//Route for deleting a post, specifying by the id of the post
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {

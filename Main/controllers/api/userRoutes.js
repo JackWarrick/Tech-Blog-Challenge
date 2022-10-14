@@ -3,6 +3,8 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+//Route for creating a new user 
+
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
@@ -17,6 +19,8 @@ router.post('/', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+//Route for posting the login information that finds the existing username and then checks the password to log them in
 
 router.post('/login', async (req, res) => {
   try {
@@ -49,6 +53,8 @@ router.post('/login', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+//Route for "posting" a logout, which sounds weird, but it sends information to end the session
 
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {

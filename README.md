@@ -35,6 +35,8 @@ For more information, please reference my GitHub profile [here](https://github.c
 
 ## Media
 
+**Link to deployed application:**
+
 [Link to Deployed Application]()
 
 -----

@@ -5,6 +5,8 @@ const sequelize = require('../config/connection');
 
 class Post extends Model {}
 
+//A post has an ID, which autoincrements and is primary - it has a title, it has a description, it has a date created, which uses the default value of now, and it has user_id which references the id in the user model so it is auto made too
+
 Post.init(
   {
     id: {
@@ -40,6 +42,7 @@ Post.init(
     underscored: true,
     modelName: 'post',
   }
+  //this is called 'post' as we export it
 );
 
 module.exports = Post;
